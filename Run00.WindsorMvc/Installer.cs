@@ -5,6 +5,7 @@ using Castle.Windsor;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using System.Web.Http;
 
 namespace Run00.WindsorMvc
 {
@@ -16,6 +17,7 @@ namespace Run00.WindsorMvc
 
 			container.Register(Component.For<GlobalFilterCollection>().Instance(GlobalFilters.Filters).LifeStyle.Singleton);
 			container.Register(Component.For<RouteCollection>().Instance(RouteTable.Routes).LifeStyle.Singleton);
+			container.Register(Component.For<HttpConfiguration>().Instance(GlobalConfiguration.Configuration).LifeStyle.Singleton);
 			container.Register(Component.For<IControllerFactory>().ImplementedBy<WindsorControllerFactory>().LifeStyle.Singleton);
 			container.Register(Component.For<IMvcFilter>().ImplementedBy<HandleErrorAttribute>().LifeStyle.Singleton);
 
