@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>Run00.WindsorMvc</id>
+		<version>0.0.0.1</version>
+		<title>Run00.WindsorMvc</title>
+		<authors>Run00</authors>
+		<owners />
+		<licenseUrl>http://www.gnu.org/licenses/lgpl-3.0.txt</licenseUrl>
+		<projectUrl>http://run00.com/</projectUrl>
+		<iconUrl>http://xp-dev.com/svn/Run00.WindsorMvc/logo.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Run00.WindsorMvc uses Castle.Windsor to replace MVCs standard controller factory.</description>
+		<dependencies>
+			<dependency id="Castle.Core" version="3.2.0" />
+			<dependency id="Castle.Windsor" version="3.2.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="Run00.WindsorMvc\bin\Release\Run00.WindsorMvc.dll" target="lib\Run00.WindsorMvc.dll" />
+	</files>
+</package>
