@@ -17,6 +17,7 @@ namespace Run00.WindsorMvc
 			container.Register(Component.For<GlobalFilterCollection>().Instance(GlobalFilters.Filters).LifeStyle.Singleton);
 			container.Register(Component.For<RouteCollection>().Instance(RouteTable.Routes).LifeStyle.Singleton);
 			container.Register(Component.For<IControllerFactory>().ImplementedBy<WindsorControllerFactory>().LifeStyle.Singleton);
+			container.Register(Component.For<IMvcFilter>().ImplementedBy<HandleErrorAttribute>().LifeStyle.Singleton);
 
 			container.Register(
 				Types.FromAssemblyInDirectory(new AssemblyFilter(HttpRuntime.BinDirectory))
