@@ -53,7 +53,7 @@
     <Compile Include="ExtensionsForIWindsorContainer.cs" />
     <Compile Include="Configurations\AreaRegistrationConfiguration.cs" />
     <Compile Include="Configurations\GlobalFilterConfiguration.cs" />
-    <Compile Include="IAppFilter.cs" />
+    <Compile Include="IFilterAttribute.cs" />
     <Compile Include="IComponentConfiguration.cs" />
     <Compile Include="Installer.cs" />
     <Compile Include="Configurations\ControllerFactoryConfiguration.cs" />

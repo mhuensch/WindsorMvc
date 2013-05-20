@@ -2,7 +2,7 @@
 
 namespace Run00.WindsorMvc
 {
-	public interface IAppFilter : IMvcFilter
+	public interface IFilterAttribute : IMvcFilter
 	{
 	}
 }
