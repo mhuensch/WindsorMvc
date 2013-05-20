@@ -4,6 +4,7 @@ using Castle.Windsor.Installer;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Web;
 
 namespace Run00.WindsorMvc
 {
@@ -13,6 +14,11 @@ namespace Run00.WindsorMvc
 		{
 			foreach (var dir in directories)
 				container.Install(FromAssembly.InDirectory(new AssemblyFilter(dir)));
+		}
+
+		public static void InstallFromBin(this IWindsorContainer container)
+		{
+			container.Install(FromAssembly.InDirectory(new AssemblyFilter(HttpRuntime.BinDirectory)));
 		}
 
 		public static void ConfigureComponents(this IWindsorContainer container)
