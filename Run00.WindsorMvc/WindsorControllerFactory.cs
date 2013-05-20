@@ -1,10 +1,6 @@
 ﻿using Castle.MicroKernel;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -43,8 +39,6 @@ namespace Run00.WindsorMvc
 		protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
 		{
 			Contract.Assume(_kernel != null);
-
-			var area = requestContext.RouteData.Values["area"];
 
 			if (controllerType == null)
 			{
