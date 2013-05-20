@@ -58,7 +58,6 @@
     <Compile Include="Installer.cs" />
     <Compile Include="Configurations\ControllerFactoryConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Configurations\DefaultRouteConfiguration.cs" />
     <Compile Include="WindsorControllerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
